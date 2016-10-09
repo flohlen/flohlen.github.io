@@ -7,42 +7,19 @@ body {
 }
 
 .wrapper {
-  padding: 5%;
+  background: white;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1250px;
+  border-color: rgba(255,255,255,0.5);
 }
 
-.nav-bar {
-  background-color: #fafafa;
-  width: 100%;
-  height: 48px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  border-top: 3px solid #f44336;
-  border-bottom: 3px solid #f44336;
+.main-header {
+  background: #212121;
+  height: 100px;
 }
-
-.nav-bar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.nav-bar li {
-  display: inline;
-  float: left;
-}
-
-.nav-bar li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: #212121;
-  font-weight: 700;
-  text-align: center;
-}
-
-.nav-bar li a:hover {
-  background-color: #212121;
-  color: #fafafa;
+.main-header h1 {
+  color: #fff;
+  margin: 0px;
+  padding: 30px;
 }
