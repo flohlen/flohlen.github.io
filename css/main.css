@@ -5,26 +5,3 @@
 body {
   background-color: #424242;
 }
-
-.content {
-  background: #fff;
-}
-
-.wrapper {
-  background-color: white;
-  margin: 40px auto;
-  width: 90%;
-  max-width: 1250px;
-  border-color: rgba(255,255,255,0.5);
-}
-
-.content .main-header {
-  background: #212121;
-  height: 100px;
-}
-
-.content .main-header h1 {
-  color: #fff;
-  margin: 0px;
-  padding: 30px;
-}
