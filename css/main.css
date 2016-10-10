@@ -6,18 +6,24 @@ body {
   background-color: #424242;
 }
 
+.content {
+  background: #fff;
+}
+
 .wrapper {
-  background: white;
+  background-color: white;
   margin: 40px auto;
   width: 90%;
   max-width: 1250px;
   border-color: rgba(255,255,255,0.5);
+  overflow: auto;
 }
 
 .main-header {
   background: #212121;
   height: 100px;
 }
+
 .main-header h1 {
   color: #fff;
   margin: 0px;
