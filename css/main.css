@@ -70,7 +70,7 @@ body {
 }
 
 .card li:before {
-  content: "»";
+  content: "-";
   padding-right: 2px;
   padding-bottom: 1px;
   color: #424242;
