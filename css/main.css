@@ -12,7 +12,7 @@ body {
   width: 90%;
   max-width: 1250px;
   border-color: rgba(255,255,255,0.5);
-  overflow: auto;
+  overflow: hidden;
 }
 
 .content {
@@ -28,4 +28,50 @@ body {
   color: #fff;
   margin: 0px;
   padding: 30px;
+}
+
+.badge {
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.cards {
+  padding: 15px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  padding: 15px 15px 15px 15px;
+  width: 16%;
+  border: 1px solid #f44336;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.card-head {
+  font-size: 17px;
+}
+
+.card ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card li {
+  padding: 5px;
+  text-align: left;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.card li:before {
+  content: "»";
+  padding-right: 2px;
+  padding-bottom: 1px;
+  color: #424242;
 }
