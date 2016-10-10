@@ -18,12 +18,12 @@ body {
   border-color: rgba(255,255,255,0.5);
 }
 
-.main-header {
+.content .main-header {
   background: #212121;
   height: 100px;
 }
 
-.main-header h1 {
+.content .main-header h1 {
   color: #fff;
   margin: 0px;
   padding: 30px;

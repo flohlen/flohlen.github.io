@@ -1,11 +1,11 @@
-.sidebar {
+.content .sidebar {
   width: 20%;
   display: block;
   padding: 20px 10px 20px 20px;
   float: left;
 }
 
-.sidebar ul {
+.content .sidebar ul {
   list-style-type: none;
   margin: 0;
   padding: 15px;
@@ -13,7 +13,7 @@
   color: #424242;
 }
 
-.sidebar li a{
+.content .sidebar li a{
   display: block;
   text-decoration: none;
   color: #424242;
@@ -23,26 +23,26 @@
   font-size: 15px;
 }
 
-.sidebar li a:hover {
+.content .sidebar li a:hover {
   background-color: #f5f5f5;
 }
 
-.sidebar li a:active {
+.content .sidebar li a:active {
   background-color: #f44336;
   color: #fff;
 }
 
-.sidebar .active {
+.content .sidebar .active {
   background-color: #f44336;
   color: #fff;
 }
 
-.sidebar .active:hover {
+.content .sidebar .active:hover {
   background-color: #f44336;
   color: #fff;
 }
 
-.sidebar .head {
+.content .sidebar .head {
   font-weight: 600;
   padding-left: 4px;
   padding-bottom: 5px;
@@ -51,14 +51,14 @@
   text-transform: uppercase;
 }
 
-.main-content {
+.content .main-content {
   width: 74%;
   display: block;
   float: right;
   padding: 20px 30px 20px 10px;
 }
 
-.main-content .title {
+.content .main-content .title {
   display: block;
   color: #424242;
   font-weight: 600;
@@ -67,6 +67,6 @@
   font-size: 20px;
 }
 
-.content-body {
+.content .content-body {
   padding: 0px 10px 10px 10px;
 }
