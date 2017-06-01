@@ -1,4 +1,5 @@
-var speed = 5;
+var speed_x = 4;
+var speed_y = Math.floor(Math.random() * 5) + 2;
 
 var score_1 = 0;
 var score_2 = 0;
@@ -39,12 +40,14 @@ function draw() {
   //Paddle 1
   if (ball_current_y <= mouseY+50 && ball_current_y >= mouseY-50 && ball_current_x <= 30 && ball_current_x >= 20) {
     x_axis = !x_axis;
+    speed_y = Math.floor(Math.random() * 5) + 2;
   }
   
   //Paddle2
   //Computer
   if (ball_current_y <= ball_current_y+50 && ball_current_y >= ball_current_y-50 && ball_current_x >= display_w-40 && ball_current_x <= display_w-30) {
     x_axis = !x_axis;
+    speed_y = Math.floor(Math.random() * 5) + 2;
   }
   
   //Out
@@ -66,14 +69,14 @@ function draw() {
   }
 
   if (x_axis) {
-    ball_current_x += speed;
+    ball_current_x += speed_x;
   } else {
-    ball_current_x -= speed;
+    ball_current_x -= speed_x;
   }
   if (y_axis) {
-    ball_current_y += speed;
+    ball_current_y += speed_y;
   } else {
-      ball_current_y -= speed;
+      ball_current_y -= speed_y;
   }
 
   //Ball
