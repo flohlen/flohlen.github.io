@@ -1,0 +1,26 @@
+body {
+  background-color: f12121;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.picture {
+  height: 230px;
+  width: 50%;
+  background-color: 000;
+}
+
+.right {
+  align: right;
+}
+
+.left {
+  align: left;
+}
