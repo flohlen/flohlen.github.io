@@ -56,3 +56,11 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
   padding: 0 15px 50px;
 }
+.container h1,
+.container h2,
+.container h3
+.container h4
+.container h5 {
+  color: #555;
+  margin-top: 1em;
+}
