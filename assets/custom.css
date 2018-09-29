@@ -3,9 +3,21 @@ body {
   height: 100%;
   color: #444;
   line-height: 1.6em;
+  cursor: default;
 }
+
+::selection {
+  color: #fff;
+  background-color: #555; 
+}
+
 a:active, a:focus {
   outline: none;
+}
+a:hover {
+  background-color: #555;
+  color: #fff;
+  cursor: default;
 }
 h1, h2, h3, h4, h5 {
   line-height: 1.2em;
@@ -13,7 +25,7 @@ h1, h2, h3, h4, h5 {
 
 .banner {
 	position: relative;
-	height: 300px;
+	height: 350px;
 	background-color: #000;
 }
 
@@ -42,9 +54,10 @@ h1, h2, h3, h4, h5 {
 }
 .banner .lead .lead-social a {
   text-decoration: none !important;
-  color: #fff;
+  color: #fff !important;
   margin-right: 15px;
   opacity: 0.7;
+  background-color: #000 !important;
 }
 .banner .lead .lead-social a:hover {
   color: #fff;
