@@ -1,14 +1,44 @@
 body {
   font-size: 15px;
   height: 100%;
-  color: #444;
+  color: #ff9100;
   line-height: 1.6em;
+  background-color: #000;
+  cursor: default;
 }
-a:active, a:focus {
+
+::selection {
+  color: #000;
+  background-color: #ff9100; 
+}
+
+a {
+  color: #ff9100;
+}
+a:active,
+a:focus {
   outline: none;
 }
-h1, h2, h3, h4, h5 {
+a:hover {
+  background-color: #ff9100;
+  color: #000;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.2em;
+}
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+p:hover {
+  text-shadow: 0 0 5px #fb8c00;
 }
 
 .banner {
@@ -18,7 +48,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .banner .lead {
-  color: #fff;
+  color: #ff9100;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -42,12 +72,13 @@ h1, h2, h3, h4, h5 {
 }
 .banner .lead .lead-social a {
   text-decoration: none !important;
-  color: #fff;
+  color: #ff9100 !important;
   margin-right: 15px;
   opacity: 0.7;
+  background-color: #000 !important;
 }
 .banner .lead .lead-social a:hover {
-  color: #fff;
+  color: #ff9100;
   opacity: 0.9;
 }
 
@@ -58,9 +89,36 @@ h1, h2, h3, h4, h5 {
 }
 .container h1,
 .container h2,
-.container h3
-.container h4
+.container h3,
+.container h4,
 .container h5 {
-  color: #555;
+  color: #ff9100;
   margin-top: 1em;
+}
+.container h1:before {
+  content: '  \1F383  ';
+}
+
+#timeline {
+  border-top: 3px solid #ff9100;
+  border-bottom: 3px solid #ff9100;
+  animation: border-pulsate 3s infinite;
+}
+@keyframes border-pulsate {
+    0%   { border-color: rgba(255, 144, 0, 1); }
+    50%  { border-color: rgba(255, 144, 0, 0); }
+    100% { border-color: rgba(255, 144, 0, 1); }
+}
+#timeline p {
+  text-align: center;
+}
+
+.blink {
+  animation: blinker 0.2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
