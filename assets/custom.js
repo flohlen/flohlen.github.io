@@ -5,14 +5,14 @@ for(var i = 0; i < links.length; i++) {
 particlesJS("particular", {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 150,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#fb8c00"
+      "value": "#fff"
     },
     "shape": {
       "type": "circle",
@@ -25,7 +25,7 @@ particlesJS("particular", {
       }
     },
     "opacity": {
-      "value": 0.2,
+      "value": 0.8,
       "random": false,
       "anim": {
         "enable": false,
@@ -35,7 +35,7 @@ particlesJS("particular", {
       }
     },
     "size": {
-      "value": 3,
+      "value": 6,
       "random": true,
       "anim": {
         "enable": false,
@@ -47,17 +47,17 @@ particlesJS("particular", {
     "line_linked": {
       "enable": false,
       "distance": 150,
-      "color": "#fb8c00",
+      "color": "#fff",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
       "speed": 2,
-      "direction": "none",
+      "direction": "bottom",
       "random": true,
       "straight": false,
-      "out_mode": "bounce",
+      "out_mode": "out",
       "bounce": false,
       "attract": {
         "enable": false,
@@ -70,7 +70,7 @@ particlesJS("particular", {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {
