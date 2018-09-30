@@ -41,8 +41,6 @@ p:hover {
   text-shadow: 0 0 20px #fb8c00;
 }
 
-
-
 .banner {
 	position: relative;
 	height: 300px;
@@ -81,7 +79,7 @@ p:hover {
 }
 .banner .lead .lead-social a:hover {
   color: #ff9100;
-  opacity: 0.9;
+  opacity: 2;
 }
 
 .container {
