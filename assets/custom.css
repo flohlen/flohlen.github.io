@@ -1,53 +1,60 @@
 body {
   font-size: 15px;
   height: 100%;
-  color: #444;
+  color: #ff9100;
   line-height: 1.6em;
+  background-color: #000;
   cursor: default;
-  animation: xmas_blink 1s step-start infinite alternate;
-  background-image: url("bg.png");
-  background-size: cover;
-  background-color:#eeeeee;
 }
 
 ::selection {
-  color: #fff;
-  animation: background_blink 1s step-start infinite alternate;
+  color: #000;
+  background-color: #ff9100; 
 }
 
-a:active, a:focus {
+a {
+  color: #ff9100;
+}
+a:active,
+a:focus {
   outline: none;
 }
 a:hover {
-  background-color: #fff;
+  background-color: #ff9100;
+  color: #000;
   cursor: default;
-  animation: xmas_blink 1s step-start infinite alternate;
 }
-h1, h2, h3, h4, h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.2em;
-  animation: xmas_blink 1s step-start infinite alternate;
-  text-shadow: 0 0 4px #212121;
+}
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+p:hover {
+  text-shadow: 0 0 20px #fb8c00;
 }
 
 .banner {
 	position: relative;
-	height: 350px;
+	height: 300px;
+	background-color: #000;
 }
 
 .banner .lead {
-  color: #fff;
+  color: #ff9100;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   min-width: 200px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #eee;
-  animation: border_blink 1s step-start infinite alternate;
 }
 .banner .lead h1 {
   font-size: 3em;
@@ -65,14 +72,14 @@ h1, h2, h3, h4, h5 {
 }
 .banner .lead .lead-social a {
   text-decoration: none !important;
+  color: #ff9100 !important;
   margin-right: 15px;
   opacity: 0.7;
-  background-color: #eee !important;
-  animation: xmas_blink 1s step-start infinite alternate;
+  background-color: #000 !important;
 }
 .banner .lead .lead-social a:hover {
-  color: #fff;
-  opacity: 1.2;
+  color: #ff9100;
+  opacity: 2;
 }
 
 .container {
@@ -82,43 +89,36 @@ h1, h2, h3, h4, h5 {
 }
 .container h1,
 .container h2,
-.container h3
-.container h4
+.container h3,
+.container h4,
 .container h5 {
-  color: #555;
+  color: #ff9100;
   margin-top: 1em;
 }
-
-#name {
-  animation: xmas_blink 1s step-start infinite alternate;
+.container h1:before {
+  content: '  \1F383  ';
 }
 
-canvas {
-  display:block;
-  position: fixed;
-  z-index: -1;
+#timeline {
+  border-top: 3px solid #ff9100;
+  border-bottom: 3px solid #ff9100;
+  animation: border-pulsate 3s infinite;
+}
+@keyframes border-pulsate {
+    0%   { border-color: rgba(255, 144, 0, 1); }
+    50%  { border-color: rgba(255, 144, 0, 0); }
+    100% { border-color: rgba(255, 144, 0, 1); }
+}
+#timeline p {
+  text-align: center;
 }
 
-@keyframes xmas_blink {
-  0% { color: #ff0000; }
-  25% { color: #ff0000; }
-  50% { color: #ff7878; }
-  75% { color: #74d680; }
-  100% { color: #378b29; }
+.blink {
+  animation: blinker 0.2s linear infinite;
 }
 
-@keyframes border_blink {
-  0% { border-color: #ff0000; }
-  25% { border-color: #ff0000; }
-  50% { border-color: #ff7878; }
-  75% { border-color: #74d680; }
-  100% { border-color: #378b29; }
-}
-
-@keyframes background_blink {
-  0% { background-color: #ff0000; }
-  25% { background-color: #ff0000; }
-  50% { background-color: #ff7878; }
-  75% { background-color: #74d680; }
-  100% { background-color: #378b29; }
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

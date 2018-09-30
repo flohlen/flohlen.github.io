@@ -3,11 +3,11 @@
 	<meta content="jonas florian reinbold, resepignev, flohlen, resepignev.com, jonas f reinbold, florian reinbold, reinbold, jonas, florian, developer, software, website, programmer, coder" name="keywords">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#212121">
+	<meta name="theme-color" content="#ff9100">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#212121">
+	<meta name="msapplication-navbutton-color" content="#ff9100">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ff9100">
 
 	<title>
 		Jonas Florian Reinbold
@@ -22,17 +22,18 @@
 <body>
 	<div id="particular" class="banner">
 		<div class="lead">
-			<h1 id="name">Jonas Florian Reinbold</h1>
+			<h1>Jonas Florian Reinbold</h1>
 			<h2 title="username">flohlen</h2>
 			<p class="lead-social">
 				<a title="instagram" href="https://www.instagram.com/flohlen" style="margin: 15px;"><i class="material-icons">favorite</i></a>
 	          	<a title="email" href="mailto:web@flohlen.de"><i class="material-icons">email</i></a>
 	          	<a title="reddit" href="https://www.reddit.com/user/resepignev"><i class="material-icons">forum</i></a>
 	        </p>
-	        <p class="lead-social">
-	        	<a title="city/location" href="https://en.wikipedia.org/wiki/Kassel" style="margin: 15px;"><i class="material-icons">location_on</i> Kassel</a>
-	        </p>
 		</div>
+	</div>
+
+	<div id="timeline">
+		<p><span id="daysto">Days until Halloween<br></span><span id="duh"></span></p>
 	</div>
 
 	<div class="container">
@@ -65,6 +66,24 @@
 			</p>
 		</div>
 	</div>
+	<script>
+		var d = new Date();
+		var duh = 31 - d.getDate();
+		var duhid = document.getElementById("duh");
+		if (duh == 0) {
+			var hdaysto = document.getElementById("daysto");
+			hdaysto.remove();
+			duh = '\u{1F383}' + " TODAY IS HALLOWEEN " + "\u{1F383}";
+			duhid.style.fontSize = 30;
+			duhid.classList.add('blink');
+			document.getElementById("timeline").style.animation = "border-pulsate 0.5s infinite";
+		}
+		duhid.innerHTML = duh;
+		if (d.getMonth() != 9) {
+			var htimeline = document.getElementById("timeline");
+			htimeline.remove();
+		}
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" type="text/javascript"></script>
 	<script src="assets/custom.js" type="text/javascript"></script><!-- /assets/custom.js -->
