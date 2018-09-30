@@ -19,7 +19,7 @@ a:active, a:focus {
   outline: none;
 }
 a:hover {
-  background-color: #555;
+  background-color: #fff;
   cursor: default;
   animation: xmas_blink 1s step-start infinite alternate;
 }
