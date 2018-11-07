@@ -1,54 +1,36 @@
 body {
   font-size: 15px;
   height: 100%;
-  color: #ff9100;
+  color: #444;
   line-height: 1.6em;
-  background-color: #000;
   cursor: default;
 }
 
 ::selection {
-  color: #000;
-  background-color: #ff9100; 
+  color: #fff;
+  background-color: #555; 
 }
 
-a {
-  color: #ff9100;
-}
-a:active,
-a:focus {
+a:active, a:focus {
   outline: none;
 }
 a:hover {
-  background-color: #ff9100;
-  color: #000;
+  background-color: #555;
+  color: #fff;
   cursor: default;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   line-height: 1.2em;
-}
-h1:hover,
-h2:hover,
-h3:hover,
-h4:hover,
-h5:hover,
-p:hover {
-  text-shadow: 0 0 20px #fb8c00;
 }
 
 .banner {
 	position: relative;
-	height: 300px;
+	height: 350px;
 	background-color: #000;
 }
 
 .banner .lead {
-  color: #ff9100;
+  color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -72,14 +54,14 @@ p:hover {
 }
 .banner .lead .lead-social a {
   text-decoration: none !important;
-  color: #ff9100 !important;
+  color: #fff !important;
   margin-right: 15px;
   opacity: 0.7;
   background-color: #000 !important;
 }
 .banner .lead .lead-social a:hover {
-  color: #ff9100;
-  opacity: 2;
+  color: #fff;
+  opacity: 0.9;
 }
 
 .container {
@@ -89,36 +71,9 @@ p:hover {
 }
 .container h1,
 .container h2,
-.container h3,
-.container h4,
+.container h3
+.container h4
 .container h5 {
-  color: #ff9100;
+  color: #555;
   margin-top: 1em;
-}
-.container h1:before {
-  content: '  \1F383  ';
-}
-
-#timeline {
-  border-top: 3px solid #ff9100;
-  border-bottom: 3px solid #ff9100;
-  animation: border-pulsate 3s infinite;
-}
-@keyframes border-pulsate {
-    0%   { border-color: rgba(255, 144, 0, 1); }
-    50%  { border-color: rgba(255, 144, 0, 0); }
-    100% { border-color: rgba(255, 144, 0, 1); }
-}
-#timeline p {
-  text-align: center;
-}
-
-.blink {
-  animation: blinker 0.2s linear infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
 }
