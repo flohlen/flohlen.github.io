@@ -4,34 +4,29 @@ body {
   color: #444;
   line-height: 1.6em;
   cursor: default;
-  animation: xmas_blink 1s step-start infinite alternate;
-  background-image: url("bg.png");
-  background-size: cover;
-  background-color:#eeeeee;
 }
 
 ::selection {
   color: #fff;
-  animation: background_blink 1s step-start infinite alternate;
+  background-color: #555; 
 }
 
 a:active, a:focus {
   outline: none;
 }
 a:hover {
-  background-color: #fff;
+  background-color: #555;
+  color: #fff;
   cursor: default;
-  animation: xmas_blink 1s step-start infinite alternate;
 }
 h1, h2, h3, h4, h5 {
   line-height: 1.2em;
-  animation: xmas_blink 1s step-start infinite alternate;
-  text-shadow: 0 0 4px #212121;
 }
 
 .banner {
 	position: relative;
 	height: 350px;
+	background-color: #000;
 }
 
 .banner .lead {
@@ -42,12 +37,6 @@ h1, h2, h3, h4, h5 {
   transform: translate(-50%, -50%);
   text-align: center;
   min-width: 200px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #eee;
-  animation: border_blink 1s step-start infinite alternate;
 }
 .banner .lead h1 {
   font-size: 3em;
@@ -65,14 +54,14 @@ h1, h2, h3, h4, h5 {
 }
 .banner .lead .lead-social a {
   text-decoration: none !important;
+  color: #fff !important;
   margin-right: 15px;
   opacity: 0.7;
-  background-color: #eee !important;
-  animation: xmas_blink 1s step-start infinite alternate;
+  background-color: #000 !important;
 }
 .banner .lead .lead-social a:hover {
   color: #fff;
-  opacity: 1.2;
+  opacity: 0.9;
 }
 
 .container {
@@ -87,38 +76,4 @@ h1, h2, h3, h4, h5 {
 .container h5 {
   color: #555;
   margin-top: 1em;
-}
-
-#name {
-  animation: xmas_blink 1s step-start infinite alternate;
-}
-
-canvas {
-  display:block;
-  position: fixed;
-  z-index: -1;
-}
-
-@keyframes xmas_blink {
-  0% { color: #ff0000; }
-  25% { color: #ff0000; }
-  50% { color: #ff7878; }
-  75% { color: #74d680; }
-  100% { color: #378b29; }
-}
-
-@keyframes border_blink {
-  0% { border-color: #ff0000; }
-  25% { border-color: #ff0000; }
-  50% { border-color: #ff7878; }
-  75% { border-color: #74d680; }
-  100% { border-color: #378b29; }
-}
-
-@keyframes background_blink {
-  0% { background-color: #ff0000; }
-  25% { background-color: #ff0000; }
-  50% { background-color: #ff7878; }
-  75% { background-color: #74d680; }
-  100% { background-color: #378b29; }
 }

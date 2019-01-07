@@ -5,7 +5,7 @@ for(var i = 0; i < links.length; i++) {
 particlesJS("particular", {
   "particles": {
     "number": {
-      "value": 150,
+      "value": 100,
       "density": {
         "enable": true,
         "value_area": 800
@@ -25,7 +25,7 @@ particlesJS("particular", {
       }
     },
     "opacity": {
-      "value": 0.8,
+      "value": 0.2,
       "random": false,
       "anim": {
         "enable": false,
@@ -35,7 +35,7 @@ particlesJS("particular", {
       }
     },
     "size": {
-      "value": 6,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -54,10 +54,10 @@ particlesJS("particular", {
     "move": {
       "enable": true,
       "speed": 2,
-      "direction": "bottom",
+      "direction": "none",
       "random": true,
       "straight": false,
-      "out_mode": "out",
+      "out_mode": "bounce",
       "bounce": false,
       "attract": {
         "enable": false,
@@ -70,7 +70,7 @@ particlesJS("particular", {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "grab"
       },
       "onclick": {
