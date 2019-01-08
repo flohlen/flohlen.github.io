@@ -1,0 +1,24 @@
+.content {
+	margin-left:50%;
+	position: absolute;
+}
+
+.seg {
+	padding: 5px 0 5px 0;
+}
+
+[data-state=on] {
+	background-color: #9c27b0 ;
+	border-radius: 50%;
+	border: #9c27b0  solid 1px;
+	height: 20px;
+	width: 20px;
+}
+
+[data-state=off] {
+	background-color: transparent;
+	border-radius: 50%;
+	border: #9c27b0  solid 1px;
+	height: 20px;
+	width: 20px;
+}

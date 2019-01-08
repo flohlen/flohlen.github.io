@@ -1,0 +1,20 @@
+body {
+	background-color: #212121;
+}
+
+#back-button {
+	color: #eee;
+	background-color: #212121;
+	border: #eee solid 2px;
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	margin: 5%;
+	position: absolute;
+	text-align: center
+}
+
+#back-button:hover {
+	background-color: #eee;
+	color: #212121;
+}
